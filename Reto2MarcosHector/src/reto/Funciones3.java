@@ -59,13 +59,13 @@ public class Funciones3 {
 			case 1: {
 				System.out.println("Introduce la cantidad de grados que deseas convertir a radianes");
 				double e=Double.parseDouble(sc.nextLine());
-				System.out.println(Funciones3.euroAdolar(e));
+				System.out.println(Funciones3.gradoAradian(e));
 				break;
 			}
 			case 2: { 
 				System.out.println("Introduce la cantidad de radianes que deseas convertir a grados");
 				double d=Double.parseDouble(sc.nextLine());
-				System.out.println(Funciones3.dolarAeuro(d));
+				System.out.println(Funciones3.radianAgrado(d));
 				break;
 			}
 			case 0: {
