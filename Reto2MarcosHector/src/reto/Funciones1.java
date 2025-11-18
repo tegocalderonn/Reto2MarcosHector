@@ -61,6 +61,7 @@ public static void menuPeso(Scanner sc) {
 		e2=sc.nextLine();
 		n2=Double.parseDouble(e2);
 		System.out.println(Funciones1.kilogramoaLibra(n2));
+		break;
 		case 0: break;
 		default:System.out.println("Número no valido");
 			break;
