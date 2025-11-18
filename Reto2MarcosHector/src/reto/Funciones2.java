@@ -21,7 +21,7 @@ public class Funciones2 {
 	public static double conversorALitros(double g) {
 		return (g * 3.785);
 	}
-	public static void menuVolumen(Scanner sc) {
+	public static void menuTemperatura(Scanner sc) {
 		int f = 0;
 		do {
 			System.out.println("=== Selecciona el tipo de conversion ===");
@@ -35,13 +35,40 @@ public class Funciones2 {
 				System.out.println("Introduce los grados a convertir a farenheit");
 				String e2 = sc.nextLine();
 				double cant = Double.parseDouble(e2);				
-				System.out.println(conversionAFarenheit(cant) + "ºF");
+				System.out.println(conversionAFarenheit(cant) + " ºF");
 				break;
 			case 2:
-				System.out.println("Introduce los grados farenheit a convertir a celsius");
+				System.out.println("Introduce los farenheit a convertir a celsius");
 				String e3 = sc.nextLine();
 				double cant2 = Double.parseDouble(e3);
-				System.out.println(conversionAFarenheit(cant2) + "C");
+				System.out.println(conversionAFarenheit(cant2) + " C");
+				break;
+			default: System.out.println("Valor introducido no valido.");
+				break;
+			}
+		} while (f != 0);
+	}
+	public static void menuVolumen(Scanner sc) {
+		int f = 0;
+		do {
+			System.out.println("=== Selecciona el tipo de conversion ===");
+			System.out.println("1. De litros a galones");
+			System.out.println("2. De galones a litros");
+			System.out.println("0. Salir ");
+			String entrada = sc.nextLine();
+			f = Integer.parseInt(entrada);
+			switch (f) {
+			case 1:
+				System.out.println("Introduce los litros a convertir a galones");
+				String e2 = sc.nextLine();
+				double cant = Double.parseDouble(e2);				
+				System.out.println(conversorAGalones(cant) + " galones");
+				break;
+			case 2:
+				System.out.println("Introduce los galones a convertir a litros");
+				String e3 = sc.nextLine();
+				double cant2 = Double.parseDouble(e3);
+				System.out.println(conversorALitros(cant2) + " L");
 				break;
 			default: System.out.println("Valor introducido no valido.");
 				break;
