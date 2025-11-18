@@ -10,6 +10,7 @@ public class Reto {
 		Scanner sc=new Scanner(System.in).useLocale(Locale.US);
 		int n1=0;
 		double n2=0;
+		//inicio del double
 		do {
 			System.out.println("Selecciona el tipo de conversión");
 			System.out.println("1. Longitud");
@@ -22,19 +23,27 @@ public class Reto {
 			String opcion=sc.nextLine();
 			n1=Integer.parseInt(opcion);
 			switch (n1) {
+			//Menu de longitud
 			case 1:Funciones1.menuLongitud(sc);
 				break;
+			//Menu de peso
 			case 2:Funciones1.menuPeso(sc);
 			break;
+			//menu de temperatura
 			case 3:Funciones2.menuTemperatura(sc);
 			break;
+			//Menu de volumen
 			case 4:Funciones2.menuVolumen(sc);
 			break;
+			//Menu de monedas
 			case 5:Funciones3.menuMoneda(sc);
 			break;
+			//Menu de angulos
 			case 6:Funciones3.menuAngulo(sc);
 			break;
+			//Salir
 			case 0:System.out.println("Has salido del programa");break;
+			//Default en caso de que sea un numero fuera del 0 al 6
 			default:System.out.println("Número no válido");
 				break;
 			}
