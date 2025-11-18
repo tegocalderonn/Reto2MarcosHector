@@ -20,11 +20,11 @@ public static void menuLongitud(Scanner sc) {
 	double n2=0;
 	do {
 		System.out.println("Selecciona la conversión de longitud");
-		String e1=sc.nextLine();
-		n1=Integer.parseInt(e1);
 		System.out.println("1. Millas a Kilometros");
 		System.out.println("2. Kilometros a Millas");
 		System.out.println("0. Salir");
+		String e1=sc.nextLine();
+		n1=Integer.parseInt(e1);
 		switch (n1) {
 		case 1:System.out.println("Introduce las millas que deseas convertir a kilometros");
 			String e2=sc.nextLine();
@@ -46,11 +46,11 @@ public static void menuPeso(Scanner sc) {
 	double n2=0;
 	do {
 		System.out.println("Selecciona la conversión de peso");
-		String e1=sc.nextLine();
-		n1=Integer.parseInt(e1);
 		System.out.println("1. Libras a Kilogramos");
 		System.out.println("2. Kilogramos a libras");
 		System.out.println("0. Salir");
+		String e1=sc.nextLine();
+		n1=Integer.parseInt(e1);
 		switch (n1) {
 		case 1:System.out.println("Introduce las libras que deseas convertir a kilogramos");
 			String e2=sc.nextLine();
